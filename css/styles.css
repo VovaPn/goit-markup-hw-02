@@ -1,0 +1,175 @@
+/* колір основного тексту #757575 */
+/* колір додаткового тексту #212121 */
+/* основний фон #FFFFFF */
+/* додатковий фон #F5F4FA */
+/* фон додаткових елементів #2F303A */
+/* акцент #2196F3 */
+
+
+body{
+    background-color:#FFFFFF ;
+    color:#757575; ;
+    font-family:Roboto, sans-serif ;
+}
+h1,h2,h3 {
+color: #212121;
+  }
+h2 {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+ul {
+    list-style: none;
+}
+a {
+        text-decoration: none;
+  }
+/* logo */
+.logo {
+color: #2196F3;
+font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+}
+.logo-second-color{
+    color: #000000;
+}
+/* nav */
+button {
+    cursor: pointer;
+}
+
+.nav-link {
+    color:#212121 ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav-contact {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+.nav-contact:hover,
+.nav-contact:focus,
+.nav-contact:active 
+{
+        color: #2196F3;
+    }
+
+.nav-link:hover,
+.nav-link:focus, 
+.nav-link:active
+{
+        color: #2196F3;
+    }
+/* hero */
+.hero {
+    background-color:#2F303A;
+    }
+.hero-heading {
+    color: #FFFFFF;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+.hero-button {
+background-color: #2196F3;
+color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+} 
+/* benefits */
+.benefits-heading {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.13;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+.benefits-paragraph {
+        font-style: normal;
+        font-size: 14px;
+        line-height:1.71;
+        letter-spacing: 0.03em;
+}
+
+/* team */
+.team {
+    background-color: #F5F4FA;
+}
+.team h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+.team p {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* footer */
+.logo-second-color-footer {
+color: #FFFFFF;
+}
+
+footer {
+background-color: #2F303A;
+color: #FFFFFF;    
+}
+.footer-contacts {
+    color:rgba(255, 255, 255, 0.6);
+}
+/* portfolio */
+
+/* filter */
+.filter-buttons {
+    background-color: #F5F4FA;
+    color:#212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.filter-buttons:hover,
+.filter-buttons:focus {
+    background-color:#2196F3;
+    color: #FFFFFF;
+}
+/* projects */
+.projects h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects p {
+    -size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
