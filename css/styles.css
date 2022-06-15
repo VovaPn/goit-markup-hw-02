@@ -5,22 +5,24 @@
 /* фон додаткових елементів #2F303A */
 /* акцент #2196F3 */
 
+:root {
+--text-color: #757575;
+--second-text-color: #212121;
+--main-background: #FFFFFF;
+--second-background: #F5F4FA;
+--third-background: #2F303A;
+--accent: #2196F3
+}
 
 body{
-    background-color:#FFFFFF ;
-    color:#757575; ;
+    background-color:var(--main-background) ;
+    color:var(--text-color);
     font-family:Roboto, sans-serif ;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
-h1,h2,h3 {
-color: #212121;
-  }
-h2 {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-}
+
+
 ul {
     list-style: none;
 }
@@ -29,18 +31,16 @@ a {
   }
 /* logo */
 .logo {
-color: #2196F3;
+color: var(--accent);
 font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    /* identical to box height */
-
-    letter-spacing: 0.03em;
+    
 }
 .logo-second-color{
-    color: #000000;
+    color:var(--second-text-color);
 }
 /* nav */
 button {
@@ -48,39 +48,40 @@ button {
 }
 
 .nav-link {
-    color:#212121 ;
+    color:var(--second-text-color) ;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 .nav-contact {
-    color: #757575;
+    color: var(--text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
 }
 .nav-contact:hover,
 .nav-contact:focus,
-.nav-contact:active 
+.nav-contact:active
 {
-        color: #2196F3;
+        color:var(--accent);
     }
 
 .nav-link:hover,
 .nav-link:focus, 
 .nav-link:active
 {
-        color: #2196F3;
+        color:var(--accent);
+    }
+    .current {
+        color: var(--accent);
     }
 /* hero */
 .hero {
-    background-color:#2F303A;
+    background-color:var(--third-background);
     }
 .hero-heading {
-    color: #FFFFFF;
+    color: var(--main-background);
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -89,8 +90,9 @@ button {
         text-transform: uppercase;
 }
 .hero-button {
-background-color: #2196F3;
-color: #FFFFFF;
+background-color: var(--accent);
+color: var(--main-background);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -98,71 +100,82 @@ color: #FFFFFF;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    border: 0ch;
 } 
+
+.heading {
+    color: var(--second-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
 /* benefits */
 .benefits-heading {
+        color: var(--second-text-color); 
         font-weight: 700;
-        font-size: 14px;
         line-height: 1.13;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
 }
 .benefits-paragraph {
-        font-style: normal;
-        font-size: 14px;
         line-height:1.71;
-        letter-spacing: 0.03em;
 }
 
 /* team */
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--second-background);
 }
 .team h3 {
+    color: var(--second-text-color);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
-        letter-spacing: 0.03em;
 }
 .team p {
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
-        letter-spacing: 0.03em;
 }
 
 /* footer */
 .logo-second-color-footer {
-color: #FFFFFF;
+color: var(--main-background);
 }
 
 footer {
-background-color: #2F303A;
-color: #FFFFFF;    
+background-color: var(--third-background);
+color: var(--main-background);    
 }
 .footer-contacts {
     color:rgba(255, 255, 255, 0.6);
+}
+.footer-address {
+    font-style: inherit;
+    line-height: 1.71;
+    
 }
 /* portfolio */
 
 /* filter */
 .filter-buttons {
-    background-color: #F5F4FA;
-    color:#212121;
+    font-family: inherit;
+    background-color: var(--second-background);
+    color:var(--second-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
+    border: 0ch;
 }
 .filter-buttons:hover,
 .filter-buttons:focus {
-    background-color:#2196F3;
-    color: #FFFFFF;
+    background-color:var(--accent);
+    color: var(--main-background);
 }
 /* projects */
-.projects h3 {
+.projects h2 {
+    color: var(--second-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -171,5 +184,4 @@ color: #FFFFFF;
 .projects p {
     -size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
